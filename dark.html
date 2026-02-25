@@ -1,0 +1,21 @@
+<!DOCTYPE html>  
+<html lang="en" id="htmlTag">  
+<head>  
+  <meta charset="UTF-8">  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <title>Dark Mode Example</title>  
+  <link href="./output.css" rel="stylesheet">  
+</head>  
+<body class="bg-sky-900 h-screen dark:bg-gray-800">  
+  <div class="flex flex-col items-center justify-center h-full gap-4">  
+    <button class="font-extrabold bg-blue-400 text-white p-5 dark:bg-red-100 dark:text-gray-800">Focus on me</button>  
+    <button onclick="toggleDarkMode()" class="mt-4 px-4 py-2 bg-gray-200 rounded">Toggle Dark Mode</button>  
+  </div>  
+  <script>  
+    function toggleDarkMode() {  
+      const html = document.getElementById('htmlTag');  
+      html.classList.toggle('dark');  
+    }  
+  </script>  
+</body>  
+</html> 
